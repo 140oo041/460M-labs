@@ -1,4 +1,11 @@
-module stepsPerSec(input pulse, tick clk, rst, output reg[15:0] steps);
+module stepsPerSec (
+    input pulse,
+    input tick,
+    input clk,
+    input rst,
+    output reg[15:0] steps
+);
+
     always @(posedge clk) begin
         if(rst || tick) begin
             steps <= 0;
@@ -10,4 +17,5 @@ module stepsPerSec(input pulse, tick clk, rst, output reg[15:0] steps);
             end
         end
     end
+
 endmodule
