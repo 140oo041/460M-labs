@@ -46,13 +46,15 @@ module tb_top;
 
     // reset, select mode, start
     task begin_test(input [1:0] new_mode);
-        rst = 1;
-        start = 0;
-        mode = new_mode;
-        repeat (5) @(posedge clk);
-        start = 1;
-        repeat (5) @(posedge clk);
-        rst = 0;
+        begin
+            rst = 1;
+            start = 0;
+            mode = new_mode;
+            repeat (5) @(posedge clk);
+            start = 1;
+            repeat (5) @(posedge clk);
+            rst = 0;
+        end
     endtask
 
     // let pulses keep running for a number of seconds
