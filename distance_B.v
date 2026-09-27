@@ -1,4 +1,4 @@
-module distance (
+module distance_B (
     input clk,
     input rst,
     input pulse,

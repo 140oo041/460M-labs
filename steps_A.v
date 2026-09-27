@@ -1,4 +1,4 @@
-module steps (
+module steps_A (
     input clk,
     input rst,
     input pulse,

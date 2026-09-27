@@ -1,4 +1,4 @@
-module secs_32_steps (
+module secs_32_steps_C (
     input clk,
     input rst,
     input [15:0] steps_past_second,

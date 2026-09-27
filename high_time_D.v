@@ -1,4 +1,4 @@
-module high_time (
+module high_time_D (
     input clk,
     input rst,
     input tick,

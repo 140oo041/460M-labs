@@ -4,7 +4,7 @@ module tick_gen (
     output tick
 );
 
-    localparam SYS_CLK_HZ = 100_000_000;
+    parameter SYS_CLK_HZ = 100_000_000;
     localparam TARGET_HZ = 1;
     localparam MAX_CNT = SYS_CLK_HZ / TARGET_HZ;
     localparam CNT_W = $clog2(MAX_CNT);
